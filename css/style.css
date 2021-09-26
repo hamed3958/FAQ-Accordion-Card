@@ -1,0 +1,14 @@
+html, body{
+    min-width: 375px;
+}
+
+@font-face {
+    font-family: 'Kumbh Sans', sans-serif;
+    src: url(../font/KumbhSans-Bold.ttf);
+  }
+
+@font-face {
+    font-family: 'Kumbh Sans', sans-serif;
+    src: url(../font/KumbhSans-Regular.ttf);
+    font-weight: bold;
+}
