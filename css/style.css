@@ -1,14 +1,121 @@
-html, body{
-    min-width: 375px;
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-width: 375px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  font-family: "Kumbh Sans", sans-serif;
+  background: linear-gradient(180deg, #b068e9 50%, #6463e7 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @font-face {
-    font-family: 'Kumbh Sans', sans-serif;
-    src: url(../font/KumbhSans-Bold.ttf);
-  }
+  font-family: "Kumbh Sans", sans-serif;
+  src: url(../font/KumbhSans-Bold.ttf);
+}
 
 @font-face {
-    font-family: 'Kumbh Sans', sans-serif;
-    src: url(../font/KumbhSans-Regular.ttf);
-    font-weight: bold;
+  font-family: "Kumbh Sans", sans-serif;
+  src: url(../font/KumbhSans-Regular.ttf);
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  width: 920px;
+  height: 509px;
+  margin-top: 130px;
+  background-color: #ffffff;
+  border-radius: 23px;
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+}
+
+.leftBox {
+  position: relative;
+  width: 460px;
+  height: 509px;
+  background-repeat: no-repeat;
+  background-image: url(../images/bg-pattern-desktop.svg);
+  background-position: -579px -285px;
+}
+
+.box-img {
+  position: absolute;
+  left: -94px;
+  top: 209px;
+  z-index: +2;
+}
+
+.woman-img {
+  position: absolute;
+  margin-top: 70px;
+  left: -83.86px;
+  z-index: +1;
+}
+
+.rightBox {
+  position: relative;
+  width: 460px;
+}
+
+.rightBox > h1 {
+  margin: 65px 0 43px 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32.19px;
+}
+
+.acorbox{
+  margin-right: 95px;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
