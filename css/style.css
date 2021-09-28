@@ -156,7 +156,7 @@ body {
 
 /*--------------------------------------------media query------------------------------------------------*/
 
-@media screen and (min-width: 375px) and (max-width: 922px) {
+@media screen and (max-width: 922px) {
   body {
     min-height: 100vh;
   }
