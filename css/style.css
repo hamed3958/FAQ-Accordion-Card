@@ -76,40 +76,61 @@ body {
   font-weight: bold;
   font-size: 32px;
   line-height: 32.19px;
+  padding-left: 18px;
 }
 
-.acorbox{
+/*-----------------------------------accordian--------------------------*/
+
+.acorbox {
   margin-right: 95px;
 }
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #ffffff;
+  color: #4b4c5f;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .accordion:hover {
-  background-color: #ccc;
+.active,
+.accordion:hover {
+  color: #1e1f36;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.accordion:hover{
+  color: #F47B56;
 }
 
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
-  background-color: white;
+  color: #787887;
+  background-color: #ffffff;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  content: url(../images/icon-arrow-down.svg);
   font-size: 13px;
   color: #777;
   float: right;
@@ -117,5 +138,7 @@ body {
 }
 
 .active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  content: url(../images/icon-arrow-down.svg);
+  transform: rotate(180deg);
+  transition: 0.5s;
 }
