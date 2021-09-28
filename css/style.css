@@ -21,17 +21,6 @@ body {
   background-size: cover;
 }
 
-@font-face {
-  font-family: "Kumbh Sans", sans-serif;
-  src: url(../font/KumbhSans-Bold.ttf);
-}
-
-@font-face {
-  font-family: "Kumbh Sans", sans-serif;
-  src: url(../font/KumbhSans-Regular.ttf);
-  font-weight: bold;
-}
-
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -154,6 +143,15 @@ body {
 .between-line {
   border-top: 1px solid #e8e8ea;
   margin: 0 18px;
+}
+
+.attribution {
+  position: fixed;
+  font-size: 11px;
+  bottom: 0;
+}
+.attribution a {
+  color: #e8e8ea;
 }
 
 /*--------------------------------------------media query------------------------------------------------*/
