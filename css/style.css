@@ -66,6 +66,10 @@ body {
   z-index: +1;
 }
 
+.mobile {
+  display: none;
+}
+
 .rightBox {
   position: relative;
   width: 460px;
@@ -109,8 +113,8 @@ body {
   text-align: left;
 }
 
-.accordion:hover{
-  color: #F47B56;
+.accordion:hover {
+  color: #f47b56;
 }
 
 /* Style the accordion panel. Note: hidden by default */
@@ -129,7 +133,7 @@ body {
   text-align: left;
 }
 
-.panel > p{
+.panel > p {
   padding-bottom: 16px;
 }
 
@@ -147,8 +151,83 @@ body {
   transition: 0.5s;
 }
 
-
-.between-line{
-  border-top: 1px solid #E8E8EA;
+.between-line {
+  border-top: 1px solid #e8e8ea;
   margin: 0 18px;
+}
+
+/*--------------------------------------------media query------------------------------------------------*/
+
+@media only screen and (min-width: 375px) and (max-width: 922px) {
+  body {
+    min-height: 100vh;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 327px;
+    height: 535px;
+    margin: 148px 24px 85px 24px;
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: 30px 0;
+  }
+
+  .leftBox {
+    position: relative;
+    width: 327px;
+    height: 135px;
+    background-image: none;
+  }
+
+  .box-img,
+  .woman-img {
+    display: none;
+  }
+
+  .mobile {
+    display: inline;
+    position: relative;
+    top: -108px;
+    left: 10px;
+  }
+
+  .rightBox {
+    height: 355px;
+    width: 327px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .rightBox > h1 {
+    margin: 0 20px 25px 0;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .acorbox {
+    margin: 0;
+    padding: 0 10px;
+  }
+
+  .active,
+  .accordion:hover {
+    color: #1e1f36;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .panel > p {
+    padding-bottom: 12px;
+    padding-right: 15px;
+    line-height: 18px;
+  }
 }
