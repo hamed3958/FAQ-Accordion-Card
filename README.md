@@ -11,7 +11,7 @@ Users should be able to:
 ![FAQ Accordion Card](images/faq-accordion-card.png)
 
 ### Links
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [FAQ accordion card](https://hamed3958.github.io/FAQ-Accordion-Card/)
 
 ### Built with
 - Semantic HTML5 markup
